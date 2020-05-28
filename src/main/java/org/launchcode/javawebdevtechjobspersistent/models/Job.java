@@ -1,6 +1,7 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Job extends AbstractEntity {
