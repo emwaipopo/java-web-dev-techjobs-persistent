@@ -12,12 +12,12 @@ import java.util.List;
 public class Employer extends AbstractEntity {
 
     @NotBlank(message = "Location is required.")
-    @Size(min = 3, max = 50, message = "Location Name must be between 3 and 50 characters")
+    @Size(min = 3, max = 50, message = "Location must be between 3 and 50 characters")
     private String location;
 
     @OneToMany
     @JoinColumn
-    List<Job> jobs = new ArrayList<>();
+    private final List<Job> jobs = new ArrayList<>();
 
     public Employer() { }
 
