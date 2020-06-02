@@ -79,7 +79,7 @@ public class HomeController {
     public String displayAddSkillForm(@RequestParam Integer jobId, Model model){
         Optional<Job> result = jobRepository.findById(jobId);
         Job job = result.get();
-        model.addAttribute("title", "Add Skill to: " + job.getName());
+        //model.addAttribute("title", "Add Skill to: " + job.getName());
         model.addAttribute("skills", skillRepository.findAll());
         JobSkillDTO jobSkillDTO = new JobSkillDTO();
         jobSkillDTO.setJob(job);

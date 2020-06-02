@@ -4,7 +4,6 @@ import org.launchcode.javawebdevtechjobspersistent.controllers.AuthenticationCon
 import org.launchcode.javawebdevtechjobspersistent.models.User;
 import org.launchcode.javawebdevtechjobspersistent.models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +13,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-@Controller
 public class AuthenticationFilter extends HandlerInterceptorAdapter {
 
     @Autowired
